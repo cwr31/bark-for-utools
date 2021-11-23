@@ -60,7 +60,7 @@ window.exports = {
              let key = getKey();
              if (key !== 0) {
                 let content = encodeURIComponent(action.payload);
-                send(key + content);
+                send(key + content + "?autoCopy=1");
                 window.utools.showNotification("发送成功");
              }
              window.utools.outPlugin();
